@@ -21,6 +21,7 @@ module.exports = {
           900: '#0c4a6e',
           950: '#082f49',
         },
+<<<<<<< HEAD
         calm: {
           50: '#f0fdf4',
           100: '#dcfce7',
@@ -59,6 +60,33 @@ module.exports = {
           800: '#075985',
           900: '#0c4a6e',
           950: '#082f49',
+=======
+        primary: {
+          50: '#fef7ee',
+          100: '#fdecd3',
+          200: '#fbd5a5',
+          300: '#f8b86d',
+          400: '#f59332',
+          500: '#f2750a',
+          600: '#e35d05',
+          700: '#bc4508',
+          800: '#95370e',
+          900: '#782f0f',
+          950: '#411505',
+        },
+        secondary: {
+          50: '#fdf4ff',
+          100: '#fae8ff',
+          200: '#f5d0fe',
+          300: '#f0abfc',
+          400: '#e879f9',
+          500: '#d946ef',
+          600: '#c026d3',
+          700: '#a21caf',
+          800: '#86198f',
+          900: '#701a75',
+          950: '#4a044e',
+>>>>>>> fe3bc02c87b27ff52437d2d312cc779a164adc8b
         },
       },
       fontFamily: {
@@ -71,12 +99,21 @@ module.exports = {
       },
       keyframes: {
         fadeIn: {
+<<<<<<< HEAD
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
         },
         slideUp: {
           '0%': { transform: 'translateY(10px)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
+=======
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(10px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+>>>>>>> fe3bc02c87b27ff52437d2d312cc779a164adc8b
         },
       },
     },
