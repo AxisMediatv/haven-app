@@ -56,14 +56,14 @@ export default function CrisisDetection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="card"
         >
-          <div className="w-16 h-16 bg-haven-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Heart className="w-8 h-8 text-haven-600" />
+          <div className="w-16 h-16 bg-calm-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Heart className="w-8 h-8 text-calm-600" />
           </div>
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">
             AI-Powered Monitoring
           </h3>
           <p className="text-gray-600 mb-6">
-            Our advanced AI analyzes your messages, mood patterns, and behavior to detect 
+            Our advanced AI analyzes your messages, emotional patterns, and behavior to detect 
             potential crisis situations and provide timely intervention.
           </p>
           <div className="space-y-3 text-left">
@@ -129,15 +129,15 @@ export default function CrisisDetection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="bg-gradient-to-r from-haven-50 to-red-50 rounded-2xl p-8"
+        className="bg-gradient-to-r from-calm-50 to-red-50 rounded-2xl p-8"
       >
         <h3 className="text-2xl font-semibold text-gray-900 mb-6">
           Your Safety is Our Priority
         </h3>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="text-center">
-            <div className="w-12 h-12 bg-haven-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <Shield className="w-6 h-6 text-haven-600" />
+            <div className="w-12 h-12 bg-calm-100 rounded-full flex items-center justify-center mx-auto mb-3">
+              <Shield className="w-6 h-6 text-calm-600" />
             </div>
             <h4 className="font-semibold text-gray-900 mb-2">Privacy First</h4>
             <p className="text-gray-600 text-sm">

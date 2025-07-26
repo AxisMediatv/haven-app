@@ -17,7 +17,7 @@ export default function ChatInterface() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Hello! I'm Haven, your emotional intelligence companion. I'm here to help you develop self-awareness, emotional regulation, and mental wellness. How are you feeling today?",
+      text: "Hello! I'm Haven, your emotional intelligence companion. I'm here to help you develop self-awareness, emotional regulation, and emotional wellness. How are you feeling today?",
       sender: 'bot',
       timestamp: new Date(),
       emotion: 'neutral'
@@ -130,7 +130,7 @@ export default function ChatInterface() {
       {/* Header */}
       <div className="bg-white border-b border-gray-200 p-4">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-haven-600 rounded-full flex items-center justify-center">
+          <div className="w-10 h-10 bg-calm-600 rounded-full flex items-center justify-center">
             <Heart className="w-6 h-6 text-white" />
           </div>
           <div>
@@ -160,7 +160,7 @@ export default function ChatInterface() {
               <div className={`flex items-start gap-3 max-w-[80%] ${message.sender === 'user' ? 'flex-row-reverse' : ''}`}>
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
                   message.sender === 'user' 
-                    ? 'bg-haven-600' 
+                    ? 'bg-calm-600' 
                     : 'bg-gray-200'
                 }`}>
                   {message.sender === 'user' ? (
@@ -171,12 +171,12 @@ export default function ChatInterface() {
                 </div>
                 <div className={`rounded-lg px-4 py-2 ${
                   message.sender === 'user'
-                    ? 'bg-haven-600 text-white'
+                    ? 'bg-calm-600 text-white'
                     : 'bg-white text-gray-900 border border-gray-200'
                 }`}>
                   <p className="text-sm">{message.text}</p>
                   <p className={`text-xs mt-1 ${
-                    message.sender === 'user' ? 'text-haven-100' : 'text-gray-500'
+                    message.sender === 'user' ? 'text-calm-100' : 'text-gray-500'
                   }`}>
                     {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                   </p>
@@ -219,14 +219,14 @@ export default function ChatInterface() {
             onChange={(e) => setInputText(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="Share your thoughts and feelings..."
-            className="flex-1 resize-none border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-haven-500 focus:border-haven-500 transition-colors duration-200"
+            className="flex-1 resize-none border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-calm-500 focus:border-calm-500 transition-colors duration-200"
             rows={1}
             style={{ minHeight: '40px', maxHeight: '120px' }}
           />
           <button
             onClick={handleSendMessage}
             disabled={!inputText.trim() || isTyping}
-            className="bg-haven-600 hover:bg-haven-700 disabled:bg-gray-300 text-white p-2 rounded-lg transition-colors duration-200"
+            className="bg-calm-600 hover:bg-calm-700 disabled:bg-gray-300 text-white p-2 rounded-lg transition-colors duration-200"
           >
             <Send className="w-5 h-5" />
           </button>

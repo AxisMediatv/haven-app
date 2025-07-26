@@ -10,8 +10,9 @@ export default function Header() {
   const navigation = [
     { name: 'Features', href: '#features' },
     { name: 'Pricing', href: '#pricing' },
+    { name: 'Resources', href: '/resources' },
+    { name: 'Affiliate', href: '/affiliate' },
     { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
   ]
 
   return (
@@ -21,7 +22,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-haven-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-calm-600 rounded-lg flex items-center justify-center">
                 <Heart className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold text-gray-900">Haven</span>
@@ -34,7 +35,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-haven-600 transition-colors duration-200 font-medium"
+                className="text-gray-600 hover:text-calm-600 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
@@ -43,7 +44,7 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="text-gray-600 hover:text-haven-600 font-medium transition-colors duration-200">
+            <button className="text-gray-600 hover:text-calm-600 font-medium transition-colors duration-200">
               Sign In
             </button>
             <button className="btn-primary">
@@ -55,7 +56,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-haven-600 transition-colors duration-200"
+              className="text-gray-600 hover:text-calm-600 transition-colors duration-200"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -75,14 +76,14 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-600 hover:text-haven-600 transition-colors duration-200 font-medium"
+                  className="text-gray-600 hover:text-calm-600 transition-colors duration-200 font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
               <div className="pt-4 border-t border-gray-200">
-                <button className="text-gray-600 hover:text-haven-600 font-medium transition-colors duration-200 block mb-2">
+                <button className="text-gray-600 hover:text-calm-600 font-medium transition-colors duration-200 block mb-2">
                   Sign In
                 </button>
                 <button className="btn-primary w-full">

@@ -1,6 +1,6 @@
 # Haven - Emotional Intelligence Platform
 
-A comprehensive Next.js application for emotional intelligence development and mental wellness support, featuring AI-powered chat interface and crisis detection.
+A comprehensive Next.js application for emotional intelligence development and Haven Support support, featuring AI-powered chat interface and crisis detection.
 
 ## Features
 
